@@ -109,7 +109,7 @@ class TaskController extends Controller
      */
     private function checkRelation(Folder $folder, Task $task)
     {
-        if($folder->folder !== $task->folder_id){
+        if($folder->fol !== $task->folder_id){
             abort(404);
         }
     }
