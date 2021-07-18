@@ -102,15 +102,4 @@ class TaskController extends Controller
         ]);
     }
 
-    /**
-     * フォルダとタスクの関連性があるか調べる
-     * @param Folder $folder
-     * @param Task $task
-     */
-    private function checkRelation(Folder $folder, Task $task)
-    {
-        if($folder->id !== $task->folder_id){
-            abort(404);
-        }
-    }
 }
