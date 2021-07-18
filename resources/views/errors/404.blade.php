@@ -6,8 +6,6 @@
       <div class="col col-md-offset-3 col-md-6">
         <div class="text-center">
           <p>お探しのページは見つかりませんでした。</p>
-          <p>$folder->id<?=$folder->id ?></p>
-          <p>$task->folder_id<?=$task->folder_id ?></p>
           <a href="{{ route('home') }}" class="btn">
             ホームへ戻る
           </a>
