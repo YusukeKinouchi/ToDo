@@ -63,7 +63,7 @@ class TaskController extends Controller
         ]);
     }
 
-    private function checkRelation(Folder $folder, Task $task){
+    private function checkRelation($folder, $task){
         if($folder->id !== $task->folder_id){
             abort(404);
         }
