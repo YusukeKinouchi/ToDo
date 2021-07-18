@@ -28,6 +28,16 @@ class Task extends Model
         return self::STATUS[$status]['label'];
     }
 
+    public function getStatusClassAttribute(){
+        $status = $this->attributes['status'];
+
+        if(!isset(self::STATUS[$status])){
+            return '';
+        }
+
+        return self::STATUS[$status]['class'];
+    }
+
     /**
      * 整形した期限日
      * @return string
