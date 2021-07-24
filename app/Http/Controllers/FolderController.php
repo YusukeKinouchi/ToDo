@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-require "../../vendor/autoload.php";
+
+requiire_once('constant.php');
 
 use App\Models\Folder;
 use Illuminate\Http\Request;
@@ -16,7 +17,6 @@ class FolderController extends Controller
         $folder = new Folder();
         $folder->title = $request->title;
         Auth::user()->folders()->save($folder);
-
 
         $twitter = new TwitterOAuth(
             TWITTER_CONSUMER_KEY,
