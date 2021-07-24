@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-requiire_once('constance.php');
+require_once('constance.php');
 
 use App\Models\Folder;
 use Illuminate\Http\Request;

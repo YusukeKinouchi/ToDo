@@ -1,4 +1,5 @@
 <?php
+namespace App\Http\Controllers;
 define('TWITTER_CONSUMER_KEY','7Jqa89rPs8sPzMTrvh0I2B9qJ');
 define('TWITTER_CONSUMER_SECRET','4Q1U1Vcmlj2hxP0oymKSfCjU9tKoRZrqsfzXS2bSOQQKcpLCPw');
 define('TWITTER_ACCESS_TOKEN','1206889351826690049-Xv9bbaVa6tCxEw9EkKE7A8clb83OC1');
