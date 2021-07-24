@@ -17,10 +17,10 @@ class FolderController extends Controller
         Auth::user()->folders()->save($folder);
 
         $twitter = new TwitterOAuth(
-            env('TWITTER_CONSUMER_KEY'),
-            env('TWITTER_CONSUMER_SECRET'),
-            env('TWITTER_ACCESS_TOKEN'),
-            env('TWITTER_ACCESS_SECRET')
+            TWITTER_CONSUMER_KEY,
+            TWITTER_CONSUMER_SECRET,
+            TWITTER_ACCESS_TOKEN,
+            TWITTER_ACCESS_SECRET
         );
 
         $twitter->post("statuses/update", [
